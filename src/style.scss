@@ -1,0 +1,13 @@
+
+@import "assets/fonts/_fonts";
+
+html {
+  font-family: Gilroy;
+  body {
+    margin: 0;
+  }
+
+  @import "components/header";
+  @import "components/main";
+  @import "components/footer";
+}

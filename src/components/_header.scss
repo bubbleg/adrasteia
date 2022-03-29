@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 108px;
+
+    border-bottom: 1px solid rgba(20, 34, 81, 0.2);
+
+    padding: {
+        left: 50px;
+        right: 50px;
+    }
+
+    font: {
+        weight: 600;
+        size: 20px;
+    }
+
+    line-height: 1;
+
+    .logo {
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #142251;
+            cursor: pointer;
+            
+            &:nth-child(n + 1) {
+                margin-left: 32px;
+            }
+
+            &:visited {
+                color: #142251;
+            }
+        }
+    }
+
+    .new-request {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+
+        &__text {
+            margin-right: 12px;
+        }
+    }
+}

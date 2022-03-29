@@ -1,0 +1,132 @@
+$line-margin: 50px;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 194px;
+
+    padding: {
+        left: $line-margin;
+        right: $line-margin;
+    }
+
+    position: relative;
+    &:before {
+        content: " ";
+        position: absolute;
+        left: $line-margin;
+        top: 0;
+
+        border-top: 1px solid rgba(20, 34, 81, 0.2);
+
+        width: calc(100% - $line-margin * 2);
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        padding: 30px 40px;
+        border: 1px solid #AFB4C4;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        font: {
+            size: 34px;
+            weight: 700;
+        }
+
+        line-height: 1;
+
+        a {
+            position: relative;
+            display: flex;
+            height: 100%;
+
+            align-items: center;
+            box-sizing: border-box;
+            text-decoration: none;
+
+
+            &:nth-child(n + 2) {
+                margin-left: 20px;
+
+                &:before {
+                    content: " ";
+                    height: 100%;
+                    width: 100%;
+                    left: -20px;
+                    top: 0;
+                    position: absolute;
+
+                    border-left: 2px solid #E4E7F1;
+                }
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            svg {
+                margin-right: 24px;
+            }
+
+            margin-right: 20px;
+        }
+
+        &__whatsapp,
+        &__telegram {
+            color: #142251;
+        }
+
+        &__email {
+            color: #213887;
+            text-transform: lowercase;
+            border-bottom: 1px solid #142251;
+        }
+    }
+
+    .policy {
+        display: block;
+        box-sizing: border-box;
+        text-decoration: none;
+        cursor: pointer;
+        color: #AFB4C4;
+        font: {
+            weight: 600;
+            size: 20px;
+        }
+
+        border-bottom: 1px solid #AFB4C4;
+    }
+
+    .developer {
+        display: block;
+        box-sizing: border-box;
+        text-decoration: none;
+        cursor: pointer;
+        color: #213887;
+        font: {
+            weight: 600;
+            size: 20px;
+        }
+
+        border-bottom: 1px solid #213887;
+    }
+
+    .copyright {
+        display: block;
+        box-sizing: border-box;
+        text-decoration: none;
+
+        color: #AFB4C4;
+        font: {
+            weight: 600;
+            size: 20px;
+        }
+    }
+    
+}
