@@ -1,14 +1,17 @@
 .frame {
     min-height: 100vh;
+    margin: {
+        left: 50px;
+        right: 50px;
+    }
+
     &-main {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         
         padding: {
-            left: 50px;
             top: 70px;
-            right: 50px;
         }
 
         &__top {
@@ -184,6 +187,8 @@
         flex-direction: column;
         align-items: center;
 
+        margin-bottom: 150px;
+
         &__header{
             font: {
                 size: 94px;
@@ -205,5 +210,116 @@
             max-width: 510px;
             text-align: center;
         }
+
+        &__canvas {
+            position: relative;
+            flex-grow: 1;
+            width: 1766px;
+            height: 495px;
+
+            margin-top: 98px;
+
+            font: {
+                size: 34px;
+                weight: 400;
+            }
+
+            &__pins {
+                position: absolute;
+                left: 195px;
+                top: 7px;
+            }
+
+            span.gray {
+                color: #989EB1;
+            }
+
+            &__note {
+                position: absolute;
+                box-sizing: border-box;
+
+                &1 {
+                    &-text {
+                        position: absolute;
+                        width: 298px;
+
+                        transform: rotate(-12deg);
+
+                        top: 138px;
+                        left: 56px;
+                    }
+                }
+
+                &2 {
+                    left: 518px;
+
+                    &-text {
+                        position: absolute;
+
+                        top: 385px;
+                        left: 18px;
+                        width: 245px;
+                    }
+                }
+
+                &3 {
+                    left: 991px;
+                    top: 258px;
+
+                    &-text {
+                        position: absolute;
+                        top: -246px;
+                        width: 371px;
+                    }
+                }
+
+                &4 {
+                    left: 1471px;
+                    top: 101px;
+
+                    &-text {
+                        position: absolute;
+                        left: 39px;
+                        width: 371px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-services {
+        box-sizing: border-box;
+        background-color: #F3F6F9;
+        border-radius: 50px;
+
+        &__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: {
+                left: 86px;
+                right: 80px;
+            };
+
+            &__text {
+                font: {
+                    weight: 400;
+                    size: 94px;
+                }
+            }
+
+            &__subtext {
+                font: {
+                    weight: 400;
+                    size: 30px;
+                }
+                line-height: 36px;
+                color: #AFB4C4;
+            }
+        }
+
+
     }
 }
